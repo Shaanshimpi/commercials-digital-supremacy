@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   title: 'Digital Supremacy - Outcome-Based Marketing & Web Solutions',
   description: 'We don\'t sell services. We deliver outcomes. Websites that convert, marketing that scales, and governance that keeps us accountable.',
   generator: 'Digital Supremacy',
+  icons: {
+    icon: '/white-logo.png',
+    shortcut: '/white-logo.png',
+    apple: '/white-logo.png',
+  },
 }
 
 export default function RootLayout({
