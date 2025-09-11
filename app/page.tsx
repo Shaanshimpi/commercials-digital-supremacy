@@ -31,11 +31,12 @@ const siteContent = {
         price: { inr: { min: "1L", max: "1.25L" }, usd: { min: "1.2K", max: "1.5K" } },
         title: "Starter Website",
         features: [
-          "5-7 pages (WordPress/Shopify)",
-          "Logo + branding kit", 
+          "Logo + branding kit",
+          "5–7 pages (WordPress/Shopify)",
           "Conversion-focused copywriting",
-          "Domain/hosting setup",
-          "1 form, 2 revision rounds"
+          "Domain + hosting setup",
+          "Essential plugins",
+          "1 form, 2 revision rounds/section"
         ]
       },
       growth: { 
@@ -43,11 +44,12 @@ const siteContent = {
         title: "Growth Website",
         popular: true,
         features: [
-          "10-15 pages responsive website",
+          "10–15 pages",
           "SEO-ready copywriting",
-          "Blog setup + CMS training", 
-          "GA4/Google Search Console integration",
-          "2 forms, 2 revision rounds"
+          "Blog setup + CMS training",
+          "GA4 + GSC + GTM integration",
+          "GBP setup + basic optimization",
+          "2 forms, 2 revision rounds/section"
         ]
       },
       ecommerce: { 
@@ -55,10 +57,12 @@ const siteContent = {
         title: "E-commerce Website",
         features: [
           "Shopify/WooCommerce (≤50 SKUs)",
-          "Payment gateway integration",
+          "Payment gateway integration (2 max)",
           "Custom Figma design",
           "Product content + images",
-          "Conversion tracking setup"
+          "Conversion tracking (GA4, Ads pixels)",
+          "GBP optimization (advanced)",
+          "50 SKUs, 2 revision rounds"
         ]
       }
     },
@@ -68,14 +72,14 @@ const siteContent = {
         price: { inr: { min: "50K", max: "75K" }, usd: { min: "600", max: "900" } },
         title: "Starter Marketing",
         features: [
-          "SEO: 5-10 keywords, 2 blogs/month, 5 backlinks/month",
-          "Paid Ads: 1-2 campaigns (Google OR Meta)",
-          "2-3 static creatives/month", 
-          "1 landing page/month",
-          "Google Business Profile optimization",
-          "2 experiments/month",
-          "Weekly KPIs, monthly call",
-          "Lead operations support"
+          "SEO: 5–10 keywords, 2 blogs/mo, 5 backlinks/mo",
+          "Paid Ads: 1–2 campaigns (Google OR Meta)",
+          "Creatives: 2–3 statics/mo",
+          "Landing Page: 1/mo (A/B ready)",
+          "GBP: Optimization + 1 post/mo",
+          "Experiments: 2/mo (audience or creative)",
+          "Reporting: Weekly KPIs, monthly call",
+          "Lead Ops: Email/Sheet delivery, spam filters"
         ]
       },
       growth: { 
@@ -83,23 +87,28 @@ const siteContent = {
         title: "Growth Marketing",
         recommended: true,
         features: [
-          "SEO: 10-20 keywords, 4 blogs/month, 10 backlinks/month",
-          "Paid Ads: 3-5 campaigns (Google + Meta)",
-          "4-6 creatives/month (3 statics, 1 carousel, 1-2 videos)",
-          "2 landing pages/month", 
-          "More advanced GBP and experiments",
-          "CRM sync and call tracking"
+          "SEO: 10–20 keywords, 4 blogs/mo, 10 backlinks/mo",
+          "Paid Ads: 3–5 campaigns (Google + Meta)",
+          "Creatives: 4–6/mo (3 statics, 1 carousel, 1–2 videos)",
+          "Landing Pages: 2/mo (heatmaps enabled)",
+          "GBP: 2 posts/mo + review response",
+          "Experiments: 4/mo (audience, creative, offer, LP headline)",
+          "Reporting: Weekly KPIs, monthly strategy review",
+          "Lead Ops: CRM sync, call tracking, missed-call text-back"
         ]
       },
       scale: { 
         price: { inr: { min: "1.5L", max: "2L" }, usd: { min: "1.8K", max: "2.4K" } },
         title: "Scale Marketing",
         features: [
-          "SEO: 20-40 keywords, 6 blogs/month, 20 backlinks/month",
-          "Paid Ads: 6-8 campaigns (Google + Meta + YouTube)",
-          "8-10 creatives/month",
-          "3 landing pages + funnel dashboards",
-          "Advanced lead operations"
+          "SEO: 20–40 keywords, 6 blogs/mo, 20 backlinks/mo",
+          "Paid Ads: 6–8 campaigns (Google + Meta + YouTube)",
+          "Creatives: 8–10/mo (4 statics, 2 carousels, 2 videos, 2 UGC)",
+          "Landing Pages: 3/mo + funnel dashboards",
+          "GBP: Weekly posts + ≥5 reviews/mo",
+          "Experiments: 6/mo (audience × creative × funnel)",
+          "Reporting: Weekly dashboards, executive monthly review",
+          "Lead Ops: IVR routing, server-side GTM, advanced scoring"
         ]
       }
     },
@@ -109,10 +118,10 @@ const siteContent = {
         price: { inr: { min: "75K", max: "1L" }, usd: { min: "900", max: "1.2K" } },
         title: "Starter E-com",
         features: [
-          "Google PMax (Shopping + branded search)",
-          "Merchant Center setup", 
-          "2-3 static creatives + 1 product video",
-          "2 email/SMS flows"
+          "Google PMax (Shopping + branded search) + Remarketing",
+          "Merchant Center setup (titles, rules)",
+          "Creatives: 2–3 statics + 1 product video",
+          "Email/SMS: 2 flows (Welcome, Abandoned Cart)"
         ]
       },
       growth: { 
@@ -120,47 +129,33 @@ const siteContent = {
         title: "Growth E-com",
         bestValue: true,
         features: [
-          "Multiple channels (PMax, search, Meta, YouTube)",
-          "Enhanced product feed",
-          "More creatives and email/SMS flows", 
-          "Conversion rate optimization"
+          "Channels: PMax + non-brand search • Meta prospecting/retargeting • YouTube",
+          "Feed: GTIN/MPN enrichment + sale annotations",
+          "Creatives: 4–6 statics • 2 videos • 1 UGC/mo",
+          "Email/SMS: 5–6 flows (Browse Abandon, Win-back, Post-purchase)",
+          "CRO: Free-shipping threshold • PDP trust badges • Sticky ATC"
         ]
       },
       scale: { 
         price: { inr: { min: "2L", max: "2.75L" }, usd: { min: "2.4K", max: "3.3K" } },
         title: "Scale E-com",
         features: [
-          "Full-funnel channels",
-          "Advanced feed labeling",
-          "More creatives including UGC",
-          "Comprehensive lifecycle marketing",
-          "Optional affiliate program"
+          "Channels: Full-funnel (PMax • Meta Advantage+ Shopping • YouTube Action)",
+          "Feed: Advanced labels (margin, seasonality)",
+          "Creatives: 8–10/mo incl. UGC + catalog ads",
+          "Email/SMS: Lifecycle (VIP • churn • loyalty • referrals)",
+          "Add-ons: Affiliate program • Reviews integration"
         ]
       }
     },
 
     bundle: {
       growth: { 
-        price: { inr: { min: "3.5L", max: "4.5L" }, usd: { min: "4.2K", max: "5.4K" } },
-        title: "Growth Website + 90-day Starter Marketing",
-        features: [
-          "10-15 pages responsive website",
-          "SEO setup & GA4 integration", 
-          "90 days of marketing campaigns",
-          "Google Ads + Meta Ads setup",
-          "Advanced tracking & analytics"
-        ],
-        guarantees: [
-          "50-100 qualified leads generated",
-          "₹5-15L sales potential in 90 days",
-          "Money-back guarantee",
-          "Direct platform billing transparency",
-          "Weekly performance reports"
-        ]
+        price: { inr: { min: "5L", max: "6L" }, usd: { min: "6.1K", max: "7.3K" } },
+        title: "Growth Website + 90-day Starter Marketing"
       }
     }
   },
-
   caseStudies: [
     {
       category: "TV REPAIR",
@@ -257,7 +252,7 @@ const siteContent = {
     },
     {
       question: "Who owns the accounts and assets?",
-      answer: "You do. PPCROY only has admin access. All ad accounts, analytics, creatives, and website assets remain client‑owned."
+      answer: "You do. Digital Supremacy only has admin access. All ad accounts, analytics, creatives, and website assets remain client‑owned."
     },
     {
       question: "How are ad budgets billed?",
