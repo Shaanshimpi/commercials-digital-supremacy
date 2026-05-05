@@ -3,7 +3,10 @@
     "allow": [
       "WebFetch(domain:v0-ppcroy-outcome-packages.vercel.app)",
       "Bash(npm run dev:*)",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Bash(taskkill:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)"
     ],
     "deny": [],
     "ask": []
